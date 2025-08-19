@@ -1,5 +1,5 @@
 networks:
-  expense : {}
+  expense: {}
 
 volumes:
   mysql:
@@ -13,7 +13,7 @@ mysql:
   container_name: mysql
   volumes:
    - mysql:/var/lib/mysql 
-   
+
 # docker run -d --name backend --netork expense backend:1.0.0
 backend:
     image: backend:1.0.0
