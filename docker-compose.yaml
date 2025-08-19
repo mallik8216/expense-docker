@@ -18,10 +18,10 @@ mysql:
 backend:
     image: backend:1.0.0
     networks:
-      -expense
+      - expense
     container_name: backend
     depends_on:
-     -mysql
+     - mysql
 
 #docker run -d --name frontend --netork expense frontend:1.0.0
 frontend:
