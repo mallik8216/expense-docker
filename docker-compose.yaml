@@ -4,7 +4,7 @@ networks:
 volumes:
   mysql:
 services:
-# docker run -d --name mysql --network expense -v mysql:/var/lib/mysql mysql:1.0.0 .
+
 mysql:
   image: mysql:1.0.0
   networks:
@@ -13,7 +13,6 @@ mysql:
   volumes:
    - mysql:/var/lib/mysql 
 
-# docker run -d --name backend --netork expense backend:1.0.0
 backend:
     image: backend:1.0.0
     networks:
@@ -22,7 +21,7 @@ backend:
     depends_on:
      - mysql
 
-#docker run -d --name frontend --netork expense frontend:1.0.0
+
 frontend:
   image: frontend:1.0.0
   networks:
